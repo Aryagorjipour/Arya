@@ -15,7 +15,6 @@ namespace Arya
             num = Convert.ToInt32(numberOne);
             if (num == 1)
             {
-                // it should be in a function !!!
                 for (int i = 1; i < 101; ++i)
                 {
                     Console.WriteLine("Number: " + i);
@@ -23,16 +22,6 @@ namespace Arya
             }
             else if (num == 2)
             {
-                // inja adade zoj ro neshon mide ?
-                // Na adade farde 
-                // behtar bod injori mineweshti
-                // for (int x = 1; x < 101; x += 2)
-                // for (int x = 1; x < 101; ++x)
-                // {
-                //     // Console.WriteLine("Number: " + x);
-                //     Console.WriteLine("Number: " + x++);
-                // }
-                // chon ke motaghayere i ro beine {} minevisi biron az {} ham mitoni baz tarifesh koni
                 for (int i = 1; i < 101; i += 2)
                 {
                     Console.WriteLine("Number: " + i);
@@ -41,16 +30,10 @@ namespace Arya
             }
             else if (num == 3)
             {
-                // for (int p = 1; p < 101; ++p)
-                // {
-                //     Console.WriteLine("Number: " + ++p);
-                // }
                 for (int i = 0; i < 101; i += 2)
                 {
                     Console.WriteLine("Number: " + i);
                 }
-                // khob alan moshkel chie ?
-
             }
             else if (num == 4)
             {
@@ -63,23 +46,18 @@ namespace Arya
             else if (num == 6)
             {
                 string alfa = "";
-                // inja age space ro bar darim drost mishe ?
-                // Cool ;)
-                // rasti dar bare dokme exit hamaro dakhel while benevisam ?
                 while (alfa != "**********")
                 {
                     alfa += "*";
                     Console.WriteLine(alfa);
                 }
             }
+            else if (num == 7)
+            {
+                
+            }
             else if (num == 0)
             {
-
-                // it should work
-                // Make a document about System and System.Environment !!!
-                // and email it for me
-                //I am sorry but it code return ???
-                // use all of the in the functions like i write now
                 System.Environment.Exit(0);
             }
         }
