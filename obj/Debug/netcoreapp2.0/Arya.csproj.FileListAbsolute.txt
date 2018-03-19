@@ -1,0 +1,10 @@
+D:\Work\C# Project\Arya\bin\Debug\netcoreapp2.0\Arya.deps.json
+D:\Work\C# Project\Arya\bin\Debug\netcoreapp2.0\Arya.runtimeconfig.json
+D:\Work\C# Project\Arya\bin\Debug\netcoreapp2.0\Arya.runtimeconfig.dev.json
+D:\Work\C# Project\Arya\bin\Debug\netcoreapp2.0\Arya.dll
+D:\Work\C# Project\Arya\bin\Debug\netcoreapp2.0\Arya.pdb
+D:\Work\C# Project\Arya\obj\Debug\netcoreapp2.0\Arya.csproj.CoreCompileInputs.cache
+D:\Work\C# Project\Arya\obj\Debug\netcoreapp2.0\Arya.AssemblyInfoInputs.cache
+D:\Work\C# Project\Arya\obj\Debug\netcoreapp2.0\Arya.AssemblyInfo.cs
+D:\Work\C# Project\Arya\obj\Debug\netcoreapp2.0\Arya.dll
+D:\Work\C# Project\Arya\obj\Debug\netcoreapp2.0\Arya.pdb
