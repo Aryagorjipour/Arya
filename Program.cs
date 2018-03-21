@@ -6,11 +6,8 @@ namespace Arya
     {
         static void Main(string[] args)
         {
-            // In hamoone
             string numberOne;
             int num;
-            // this function show you all the messages. make your Main clean.
-            ShowMessage();
             numberOne = Console.ReadLine();
             num = Convert.ToInt32(numberOne);
             if (num == 1)
@@ -26,7 +23,6 @@ namespace Arya
                 {
                     Console.WriteLine("Number: " + i);
                 }
-                // i inja tamom mishe
             }
             else if (num == 3)
             {
@@ -37,7 +33,7 @@ namespace Arya
             }
             else if (num == 4)
             {
-
+                
             }
             else if (num == 5)
             {
@@ -54,7 +50,12 @@ namespace Arya
             }
             else if (num == 7)
             {
-                
+                string loop ="";
+                while(loop != "*******")
+                {
+                    loop += "*";
+                    Console.WriteLine(loop);
+                }    
             }
             else if (num == 0)
             {
