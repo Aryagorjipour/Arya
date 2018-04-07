@@ -6,125 +6,118 @@ namespace Arya
     {
         static void Main(string[] args)
         {
-            string numberOne;
-            int num;
-            ShowMessage();
-            numberOne = Console.ReadLine();
-            num = Convert.ToInt32(numberOne);
-            if (num == 1)
+            bool runApp = true;
+            while (runApp)
             {
-                for (int i = 1; i < 101; ++i)
+                ShowMessage();
+                int option = Convert.ToInt32(Console.ReadLine());
+
+                if (option == 1)
                 {
-                    Console.WriteLine("Number: " + i);
+                    ContinuousNumbers();
                 }
-            }
-            else if (num == 2)
-            {
-                for (int i = 1; i < 101; i += 2)
+                else if (option == 2)
                 {
-                    Console.WriteLine("Number: " + i);
+                    OddNumbers();
                 }
-            }
-            else if (num == 3)
-            {
-                for (int i = 0; i < 101; i += 2)
+                else if (option == 3)
                 {
-                    Console.WriteLine("Number: " + i);
+                    EvenNumbers();
                 }
-            }
-            else if (num == 4)
-            {
-                string loop, pool;
-                int cool, man;
-                Console.Write("Choose number of 0 to 10: ");
-                loop = Console.ReadLine();
-                Console.Write("Choose number of 90 to 100: ");
-                pool = Console.ReadLine();
-                cool = Convert.ToInt32(loop);
-                man = Convert.ToInt32(pool);
-                if (cool == 0 || cool == 1 || cool == 2 || cool == 3 || cool == 4 || cool == 5 || cool == 6 || cool == 7 ||
-                cool == 8 || cool == 9 || cool == 10 || man == 90 || man == 91 || man == 92 || man == 93 || man == 94 ||
-                man == 95 || man == 96 || man == 97 || man == 98 || man == 99 || man == 10)
+                else if (option == 4)
                 {
-                    for (int i = cool; i < man; i += 1)
+                    bool currectChoice = false;
+                    int givenNumber1 = 0, givenNumber2 = 0;
+                    while (!currectChoice)
+                    {
+                        Console.Write("Choose number of 0 to 10: ");
+                        givenNumber1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Choose number of 90 to 100: ");
+                        givenNumber2 = Convert.ToInt32(Console.ReadLine());
+
+                        if ((givenNumber1 >= 0 && givenNumber1 < 10) && (givenNumber2 >= 90 && givenNumber2 < 100))
+                        {
+                            currectChoice = true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("You entered a wrong number.");
+                        }
+                    }
+                    for (int i = givenNumber1; i < givenNumber2; i += 1)
                     {
                         Console.WriteLine("Number: " + i);
                     }
                 }
-                else if (cool != 0 || cool != 1 || cool != 2 || cool != 3 || cool != 4 || cool != 5 || cool != 6 || cool != 7
-                 || cool != 8 || cool != 9 || cool != 10 || man != 90 || man != 91 || man != 92 || man != 93 || man != 94 || man != 95 || man != 96 || man != 97 || man != 98 || man != 99 || man != 100)
-                {
-                    Console.WriteLine("Pealese add true numbers ...");
 
-                    Console.Write("Choose number of 0 to 10: ");
-                    loop = Console.ReadLine();
-                    Console.Write("Choose number of 90 to 100: ");
-                    pool = Console.ReadLine();
-                    cool = Convert.ToInt32(loop);
-                    man = Convert.ToInt32(pool);
-                    if (cool == 0 || cool == 1 || cool == 2 || cool == 3 || cool == 4 || cool == 5 || cool == 6 || cool == 7 ||
-                    cool == 8 || cool == 9 || cool == 10 || man == 90 || man == 91 || man == 92 || man == 93 || man == 94 ||
-                    man == 95 || man == 96 || man == 97 || man == 98 || man == 99 || man == 10)
+                else if (option == 5)
+                {
+                    int givenNumber1 = 0, givenNumber2 = 0;
+                    Console.Write("Choose the first number: ");
+                    givenNumber1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Choose the second number: ");
+                    givenNumber2 = Convert.ToInt32(Console.ReadLine());
+                    while (givenNumber1 != givenNumber2)
                     {
-                        for (int i = cool; i < man; i += 1)
-                        {
-                            Console.WriteLine("Number: " + i);
-                        }
+                        Console.WriteLine("Number: " + givenNumber1++);
+                    }
+
+                }
+                else if (option == 6)
+                {
+                    string row = "";
+                    while (row != "**********")
+                    {
+                        row += "*";
+                        Console.WriteLine(row);
                     }
                 }
-                else if (loop == "a" || loop == "b" || loop == "c" || loop == "d" || loop == "e" || loop == "f" || loop == "g" || loop == "h" || loop == "i" || loop == "j" || loop == "k" || loop == "l" || loop == "m" || loop == "n" || loop == "o" || loop == "p" || loop == "q" || loop == "r" || loop == "s" || loop == "t" || loop == "u" || loop == "v" || loop == "w" || loop == "x" || loop == "y" || loop == "z" ||
-                pool == "a" || pool == "b" || pool == "c" || pool == "d" || pool == "e" || pool == "f" || pool == "g" || pool == "h" || pool == "i" || pool == "j" || pool == "k" || pool == "l" || pool == "m" || pool == "n" || pool == "o" || pool == "p" || pool == "q" || pool == "r" || pool == "s" || pool == "t" || pool == "u" || pool == "v" || pool == "w" || pool == "x" || pool == "y" || pool == "z")
+                else if (option == 7)
                 {
-                    Console.WriteLine("Pealese choose number.....");
-
-                    Console.Write("Choose number of 0 to 10: ");
-                    loop = Console.ReadLine();
-                    Console.Write("Choose number of 90 to 100: ");
-                    pool = Console.ReadLine();
-                    cool = Convert.ToInt32(loop);
-                    man = Convert.ToInt32(pool);
-                    if (cool == 0 || cool == 1 || cool == 2 || cool == 3 || cool == 4 || cool == 5 || cool == 6 || cool == 7 ||
-                    cool == 8 || cool == 9 || cool == 10 || man == 90 || man == 91 || man == 92 || man == 93 || man == 94 ||
-                    man == 95 || man == 96 || man == 97 || man == 98 || man == 99 || man == 10)
+                    string row = "";
+                    while (row != "*******")
                     {
-                        for (int i = cool; i < man; i += 1)
-                        {
-                            Console.WriteLine("Number: " + i);
-                        }
+                        row += "*";
+                        Console.WriteLine(row);
+                    }
+
+                    while (row != "*")
+                    {
+                        row = row.Substring(1);
+                        Console.WriteLine(row);
                     }
                 }
-            }
-
-            else if (num == 5)
-            {
-
-            }
-            else if (num == 6)
-            {
-                string alfa = "";
-                while (alfa != "**********")
+                else if (option == 0)
                 {
-                    alfa += "*";
-                    Console.WriteLine(alfa);
+                    runApp = false;
+                    System.Environment.Exit(0);
                 }
-            }
-            else if (num == 7)
-            {
-                string loop = "";
-                while (loop != "******************************")
-                {
-                    loop += "*";
-                    Console.WriteLine(loop);
-
-                }
-
-            }
-            else if (num == 0)
-            {
-                System.Environment.Exit(0);
             }
         }
 
+        public static void ContinuousNumbers()
+        {
+            for (int i = 1; i < 101; ++i)
+            {
+                Console.WriteLine("Number: " + i);
+            }
+        }
+
+        public static void OddNumbers()
+        {
+            for (int i = 1; i < 101; i += 2)
+            {
+                Console.WriteLine("Number: " + i);
+            }
+        }
+
+        public static void EvenNumbers()
+        {
+            for (int i = 0; i < 101; i += 2)
+            {
+                Console.WriteLine("Number: " + i);
+            }
+        }
         public static void ShowMessage()
         {
             Console.WriteLine("Wellcome");
